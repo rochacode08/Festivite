@@ -1,0 +1,10 @@
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  appearance: none; 
+}
+
