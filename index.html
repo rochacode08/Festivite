@@ -83,6 +83,154 @@
                 placeholder="Escreva sobre os detalhes do evento"></textarea>
             </div>
           </fieldset>
+
+          <fieldset class="customization">
+            <legend>
+              <img src="assets/icons/paintbrush-vertical.svg" alt=""> Personalização
+            </legend>
+            <div class="color-wrapper">
+              <label>Cor principal</label>
+              <div class="color-group">
+                <input name="color" id="brandlight" class="colors" type="radio">
+                <input name="color" id="navy" class="colors" type="radio">
+                <input name="color" id="purple" class="colors" type="radio">
+                <input name="color" id="fuschia" class="colors" type="radio">
+                <input name="color" id="pink" class="colors" type="radio">
+                <input name="color" id="danger" class="colors" type="radio">
+                <input name="color" id="orange" class="colors" type="radio">
+                <input name="color" id="yellow" class="colors" type="radio">
+                <input name="color" id="lime" class="colors" type="radio">
+                <input name="color" id="green" class="colors" type="radio">
+                <input name="color" id="cyan" class="colors" type="radio">
+              </div>
+            </div>
+
+            <label for="">Tema do evento</label>
+            <div class="radio-wrapper">
+
+              <div class="radio-inner">
+                <label for="birthday">
+                  <input type="radio" name="theme" id="birthday" value="birthday">
+                  <img src="assets/aniversario.png" alt="">
+                  <span>Aniversário</span>
+                </label>
+              </div>
+
+              <div class="radio-inner">
+                <label for="infantile">
+                  <input type="radio" name="theme" id="infantile" value="infantile">
+                  <img src="assets/infantil.png" alt="">
+                  <span>Infantil</span>
+                </label>
+              </div>
+
+              <div class="radio-inner">
+                <label for="graduation">
+                  <input type="radio" name="theme" id="graduation" value="graduation">
+                  <img src="assets/formatura.png" alt="">
+                  <span>Formatura</span>
+                </label>
+              </div>
+
+              <div class="radio-inner">
+                <label for="wedding">
+                  <input type="radio" name="theme" id="wedding" value="wedding">
+                  <img src="assets/casamento.png" alt="">
+                  <span>Casamento</span>
+                </label>
+              </div>
+
+              <div class="radio-inner">
+                <label for="babyshower">
+                  <input type="radio" name="theme" id="babyshower" value="babyshower">
+                  <img src="assets/cha-de-bebe.png" alt="">
+                  <span>Chá de bebê</span>
+                </label>
+              </div>
+
+              <div class="radio-inner">
+                <label for="bridalshower">
+                  <input type="radio" name="theme" id="bridalshower" value="bridalshower">
+                  <img src="assets/cha-de-panela.png" alt="">
+                  <span>Chá de panela</span>
+                </label>
+              </div>
+
+              <div class="radio-inner">
+                <label for="carnival">
+                  <input type="radio" name="theme" id="carnival" value="carnival">
+                  <img src="assets/carnaval.png" alt="">
+                  <span>Carnaval</span>
+                </label>
+              </div>
+
+              <div class="radio-inner">
+                <label for="easter">
+                  <input type="radio" name="theme" id="easter" value="easter">
+                  <img src="assets/pascoa.png" alt="">
+                  <span>Páscoa</span>
+                </label>
+              </div>
+
+              <div class="radio-inner">
+                <label for="saintjohn">
+                  <input type="radio" name="theme" id="saintjohn" value="saintjohn">
+                  <img src="assets/sao-joao.png" alt="">
+                  <span>São João</span>
+                </label>
+              </div>
+
+              <div class="radio-inner">
+                <label for="Halloween">
+                  <input type="radio" name="theme" id="Halloween" value="Halloween">
+                  <img src="assets/halloween.png" alt="">
+                  <span>Halloween</span>
+                </label>
+              </div>
+
+              <div class="radio-inner">
+                <label for="christmas">
+                  <input type="radio" name="theme" id="christmas" value="christmas">
+                  <img src="assets/natal.png" alt="">
+                  <span>Natal</span>
+                </label>
+              </div>
+
+              <div class="radio-inner">
+                <label for="other">
+                  <input type="radio" name="theme" id="other" value="other">
+                  <img src="assets/outro.png" alt="">
+                  <span>Outro</span>
+                </label>
+              </div>
+
+            </div>
+
+            <div class="file">
+              <div class="switch-wrapper">
+                <label>Estilo</label>
+                <div class="switch-container">
+                  <input type="checkbox" id="theme-switch" class="switch-input">
+                  <label for="theme-switch" class="switch-label">
+                    <span class="switch-button"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="file-wrapper">
+                <label>Foto de capa</label>
+                <label class="upload-button" for="cover-photo">
+                  <div class="button">
+                    <img src="assets/icons/upload.svg" alt="">
+                    <span>Selecionar</span>
+                  </div>
+                  <span class="upload-text">Nenhum arquivo selecionado</span>
+                </label>
+                <input type="file" id="cover-photo" accept="image/*" hidden>
+              </div>
+
+            </div>
+          </fieldset>
         </form>
       </div>
     </main>
