@@ -34,14 +34,59 @@
         <form>
           <fieldset class="about-event">
             <legend>
-              teste
+              <img src="assets/icons/calendar.svg" alt=""> Sobre o evento
             </legend>
 
-            <input type="text">
-            <input type="radio">
-            <textarea name="" id=""></textarea>
-            <input type="email">
-            <input type="tel">
-          </form>
+            <div class="input-wrapper">
+              <label class="mb-12" for="title">Título</label>
+              <input id="title" name="title" type="text" placeholder="Nome do evento">
+            </div>
+
+            <div class="date-wrapper">
+              <div>
+                <label class="mb-12" for="start">Início</label>
+                <input type="date" id="start" lang="pt-BR" max="9999-12-31" data-placeholder="DD/MM/AAAA">
+              </div>
+              <div>
+                <label class="mb-12" for="end">Fim</label>
+                <input type="date" id="end" lang="pt-BR" max="9999-12-31" data-placeholder="DD/MM/AAAA">
+              </div>
+            </div>
+
+            <div class="radio-wrapper">
+              <div class="w-100">
+                <label class="mb-12" for="type">Tipo</label>
+                <div class="radio-group">
+                  <input checked type="radio" id="presencial" name="type" value="presencial">
+                  <label for="presencial" class="radio-label in-person">
+                    <img src="./assets/icons/building-2.svg" alt="Presencial">
+                    Presencial
+                  </label>
+
+                  <input type="radio" id="online" name="type" value="online">
+                  <label for="online" class="radio-label online">
+                    <img src="./assets/icons/video.svg" alt="Online">
+                    Online
+                  </label>
+                </div>
+              </div>
+
+              <div class="w-100">
+                <label class="mb-12" for="location">Local</label>
+                <input type="text" id="location" placeholder="Link ou endereço">
+              </div>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label class="mb-12" for="descripition">Descrição</label>
+              <textarea name="description" id="description" rows="6"
+                placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
 
 </html>
