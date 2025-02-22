@@ -52,13 +52,6 @@ function handleDateInputs() {
   });
 }
 
-function init() {
-  handleCoverPhotoInput();
-  formatPhoneInput();
-  validatePhoneInput();
-  handleDateInputs();
-}
-
 function showError(input, message) {
   const errorElement = document.createElement('div');
   errorElement.className = 'erro';
