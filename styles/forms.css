@@ -67,3 +67,35 @@ textarea {
   color: var(--input-placeholder);
 }
 
+.erro {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+
+  & img {
+    max-width: 1rem;
+  }
+
+  span {
+    color: var(--danger);
+    font: var(--body-xs);
+  }
+}
+
+input.erro,
+textarea.erro {
+  border: 1px solid var(--danger);
+}
+
+input[type="file"].erro {
+  border: none;
+}
+
+.upload-button.erro .button span {
+  color: var(--text-heading) ;
+}
+
+.upload-button.erro .upload-text {
+  color: var(--input-placeholder) ;
+}
